@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp">
+    <GridLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/cmtUserImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/x1"
+                android:layout_below="@+id/cmtPostDate"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/selector_buble"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:id="@+id/cmtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:text="Hionji"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_below="@+id/cmtUserName"
+                    android:id="@+id/cmtContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="There is no such attribute in Android, to show a shadow. But possible ways to view border color and width "
+                    android:textColor="@color/text" />
+            </RelativeLayout>
+            <TextView
+                android:textColor="@color/grey"
+                android:id="@+id/cmtPostDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14 feb 2018"/>
+
+        </RelativeLayout>
+    </GridLayout>
+</LinearLayout>

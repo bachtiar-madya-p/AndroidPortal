@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_userProfile"
+            android:icon="@drawable/ic_person"
+            android:title="User Profile" />
+
+    </group>
+    <item android:title="Riwayat">
+        <menu>
+            <item
+                android:id="@+id/nav_Beasiswa"
+                android:icon="@drawable/ico_beasiswa"
+                android:title="Pendaftaran Beasiswa" />
+            <item
+                android:id="@+id/nav_Bpjs"
+                android:icon="@drawable/ico_bpjs"
+                android:title="Pendaftaran BPJS" />
+            <item
+                android:id="@+id/nav_IdCard"
+                android:icon="@drawable/ico_idcard"
+                android:title="Perubahan Data Id Card" />
+            <item
+                android:id="@+id/nav_skUser"
+                android:icon="@drawable/ico_sk"
+                android:title="Surat keterangan" />
+
+            <item
+                android:id="@+id/nav_KelAbsensi"
+                android:icon="@drawable/ico_absensi"
+                android:title="Keluhan Absensi" />
+            <item
+                android:id="@+id/nav_KelCuti"
+                android:icon="@drawable/ico_cuti"
+                android:title="Keluhan Cuti" />
+            <item
+                android:id="@+id/nav_KeluhanOvertime"
+                android:icon="@drawable/ico_overtime"
+                android:title="Keluhan Overtime" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="Send Feedback" />
+
+            <item
+                android:id="@+id/nav_Logout"
+
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

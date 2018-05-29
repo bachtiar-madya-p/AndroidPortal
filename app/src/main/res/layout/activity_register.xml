@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ap_logo">
+
+        </ImageView>
+        <!--  Email Label -->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_grey"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <TextView
+                android:id="@+id/regMsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="message"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/regNik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:maxLength="7"
+                android:hint="NIK"
+                android:inputType="number"
+                android:paddingLeft="0dp"
+                android:textColorHint="#999" />
+
+            <EditText
+                android:id="@+id/regNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/ic_transparent"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Nama"
+                android:inputType="text"
+                android:paddingLeft="0dp"
+                android:textColorHint="#999" />
+
+            <Spinner
+                android:layout_marginLeft="@dimen/text_margin"
+                android:id="@+id/regPlant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Plant"
+                android:theme="@style/mySpinnerItemStyle" />
+
+            <Spinner
+                android:layout_marginLeft="@dimen/text_margin"
+                android:id="@+id/regDept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Dept"
+                android:theme="@style/mySpinnerItemStyle" />
+
+            <EditText
+                android:id="@+id/regEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/ic_transparent"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="0dp"
+                android:textColorHint="#999" />
+
+            <EditText
+                android:id="@+id/regPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/ic_transparent"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="number"
+                android:paddingLeft="0dp"
+                android:textColorHint="#999" />
+
+            <!--  Password Label -->
+
+            <EditText
+                android:id="@+id/regPwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="0dp"
+                android:textColorHint="#999" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/selector_btn"
+                android:onClick="checkLogin"
+                android:text="Daftar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="kembali       " />
+
+                <TextView
+                    android:id="@+id/linkLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Login"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">PortalV1.2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="string_click_to_load">Click Floating Button To Load</string>
+    <string name="string_getting_json_title">Getting User Data</string>
+    <string name="string_getting_json_message">getting User message</string>
+    <string name="string_some_thing_wrong">Respon gagal</string>
+    <string name="string_internet_connection_not_available">internet connection not available</string>
+    <string name="errorMessage">Hallo</string>
+    <string name="title_activity__kel_absensi">Activity_KelAbsensi</string>
+
+    <string-array name="month">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+    <string-array name="Plant">
+        <item>Plant</item>
+        <item>P 1</item>
+        <item>P 2</item>
+        <item>P 3</item>
+        <item>P 4</item>
+        <item>P 4</item>
+        <item>P 5</item>
+        <item>P 6</item>
+        <item>P 7</item>
+            </string-array>
+    <string-array name="Dept">
+        <item>Departement</item>
+        <item>D 1</item>
+        <item>D 2</item>
+        <item>D 3</item>
+        <item>D 4</item>
+        <item>D 5</item>
+        <item>D 6</item>
+        <item>D 7</item>
+    </string-array>
+    <string-array name="JnsSurat">
+        <item>Jenis Surat</item>
+        <item>Surat Ijin</item>
+        <item>Surat Dokter</item>
+        <item>Lain-lain</item>
+        </string-array>
+</resources>

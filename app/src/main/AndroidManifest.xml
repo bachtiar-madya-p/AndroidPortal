@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="portal.bachtiar.com.portalv12">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".utils.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.Activity_Splashscreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Activity_Login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.Activity_Register"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="beranda"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.Activity_UserProfile"
+            android:label="User Account"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".activity.Activity_Dashboard"
+            android:label="menu"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".activity.Activity_Mailbox"
+            android:label="Mailbox"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".activity.F1_Activity_kelAbsensi"
+            android:label="keluhan absensi"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.F1_List_KelAbsensi"
+            android:label="riwayat keluhan absensi"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".activity.F2_List_KelCuti"
+            android:label="riwayat keluhan cuti"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".activity.F2_Activity_kelCuti"
+            android:label="keluhan cuti"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.F3_Activity_kelOvertime"
+            android:label="keluhan overtime"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.F3_List_KelOvertime"
+            android:label="riwayat keluhan overtime"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".activity.F4_Activity_Beasiswa"
+            android:label="daftar beasiswa"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.F4_List_Beasiswa"
+            android:label="riwayat pendaftaran beasiswa"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name=".activity.F5_Activity_SuratKeputusan"
+            android:label="surat keterangan"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.F5_ListSkUser"
+            android:label="riwayat surat keterangan"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".activity.F6_Activity_Bpjs"
+            android:label="daftar BPJS"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.F6_List_BPjs"
+            android:label="riwayat pendaftaran BPJS"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".activity.F7_Activity_IdCard"
+            android:label="ubah id card"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.F7_List_IdCard"
+            android:label="riwayat perubahan ID CARD"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".activity.changeUserPhoto"
+            android:label="Ubah Data Pengguna"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".activity.Activity_FeedCmt"
+            android:label="komentar"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".activity.Activity_Feedback"
+            android:label="kirim feedback"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>
